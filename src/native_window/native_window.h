@@ -160,6 +160,7 @@ private:
   bool fullscreen_;
   bool show_on_taskbar_;
   bool show_on_pager_;
+  bool modal_;
   bool topmost_;
   Settings* icons;
   bool alpha_;

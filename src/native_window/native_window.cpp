@@ -32,6 +32,7 @@ NativeWindow::NativeWindow(Settings* settings){
   fullscreen_      = settings->getBoolean("fullscreen", false);
   show_on_taskbar_ = settings->getBoolean("showOnTaskbar", true);
   show_on_pager_   = settings->getBoolean("showOnPager", true);
+  modal_           = settings->getBoolean("modal", false);
   icons            = new Settings(settings->getObject("icons"));
 
   Init(settings->getString("url", (char *)""), settings);
