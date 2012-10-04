@@ -87,7 +87,6 @@ void AddWebView(CefWindowHandle& parent, char* url, Settings* settings) {
   CefBrowser::CreateBrowser(windowInfo, static_cast<CefRefPtr<CefClient>>(g_handler), url, g_handler->browserSettings_);
 
   if (!g_handler->HasMainWindow()) {
-    signal(SIGINT, destroy_handler);
     signal(SIGTERM, destroy_handler);
   }
 }
